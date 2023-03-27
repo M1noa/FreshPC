@@ -9,9 +9,9 @@ title Admin Test
 Reg.exe add HKLM /F >nul 2>&1
 IF %ERRORLEVEL%==0 goto start
 cls
-color 4c
-echo TITLE NOT RUNNING AS ADMIN
-echo REOPEN RUNNING AS ADMIN
+color 0c
+TITLE FRESH PC IS NOT RUNNING AS ADMIN!
+echo REOPEN RUNNING FRESH PC AS ADMIN!
 timeout 10
 exit
 ::Admin End
@@ -20,7 +20,7 @@ exit
 :start
 cd %temp%
 color 08
-title FreshPC v1.5.5
+title FreshPC v1.6.5
 cls
 ::  █▄ ▄█ █ █▄ █ ▄▀▄ ▄▀▄
 ::  █ ▀ █ █ █ ▀█ ▀▄▀ █▀█
@@ -50,7 +50,7 @@ goto start
 
 :driver
 cls
-title FreshPC v1.5 - Install Drivers
+title FreshPC v1.6 - Install Drivers
 ECHO.
 ECHO ...............................................
 ECHO PRESS SOMETHING.
@@ -109,35 +109,31 @@ goto drivers
 ::Activate
 :activate
 cls
-title FreshPC v1.5 - Activate Windows
 color 08
-cscript slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-cscript slmgr.vbs /skms kms.lotro.cc
-cscript slmgr.vbs /ato
-title FreshPC v1.5 - Activate Windows&cls&echo ************************************&echo Supported products:&echo - Windows Home&echo - Windows Professional&echo - Windows Enterprise, Enterprise LTSB&echo - Windows Education&echo.&echo.&echo ************************************ &echo Windows activation...
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk 3KHY7-WNT83-DGQKR-F7HPR-844BM >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk PVMJN-6DFY6-9CCP6-7BKTT-D3WVR >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk NW6C2-QMPVW-D7KKK-3GKT6-VCFB2 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2WH4N-8QGBV-H22JP-CT43Q-MDWWJ >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk WNMTR-4C88C-JK8YV-HQ7T2-76DF9 >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2F77B-TNFGY-69QQF-B8YKP-D69TJ >nul
-echo ************************************ &echo.&echo.&set i=1
+title FreshPC v1.6 - Activate Windows&cls&echo =====================================&echo &echo =====================================&echo.&echo Activating your Windows... & cscript //nologo c:\windows\system32\slmgr.vbs /ipk FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk MRPKT-YTG23-K7D7T-X2JMM-QY7MG >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk W82YF-2Q76Y-63HXB-FGJG9-GF7QX >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk YDRBP-3D83W-TY26F-D46B2-XCKRJ >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk C29WB-22CC8-VJ326-GHFJW-H9DH4 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk BN3D2-R7TKB-3YPBD-8DRP2-27GG4 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 2WN2H-YGCQR-KFX6K-CD6TF-84YXQ >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk NG4HW-VH26C-733KW-K6F98-J8CK4 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk XCVCF-2NXM9-723PB-MHCB7-2RYQQ >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk GNBB8-YVD74-QJHX6-27H4K-8QHDG >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 32JNW-9KQ84-P47T8-D8GGY-CWCK7 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk JMNMF-RHW7P-DMY6X-RF3DR-X2BQT >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 7B9N3-D94CG-YTVHR-QBPX3-RJP64 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk BB6NG-PQ82V-VRDPW-8XVD2-V8P66 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk GCRJD-8NW9H-F2CDX-CCM8D-9D6T9 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk HMCNV-VVBFX-7HMBH-CTY9B-B4FXY >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 789NJ-TQK6T-6XTH8-J39CJ-J8D3P >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk TX9XD-98N7V-6WMQ6-BX7FG-H8Q99 >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 3KHY7-WNT83-DGQKR-F7HPR-844BM >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk 7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk PVMJN-6DFY6-9CCP6-7BKTT-D3WVR >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX >nul&cscript //nologo c:\windows\system32\slmgr.vbs /ipk MH37W-N47XK-V7XM9-C7227-GCQG9 >nul
+
+echo ------------------------------------&echo.&echo.&set i=1
+
 :server
-if %i%==1 set KMS_Sev=kms.shuax.com
-if %i%==2 set KMS_Sev=NextLevel.uk.to
-if %i%==3 set KMS_Sev=GuangPeng.uk.to
-if %i%==4 set KMS_Sev=AlwaysSmile.uk.to
-if %i%==5 set KMS_Sev=kms.chinancce.com 
-if %i%==6 exit
+
+if %i%==1 set KMS_Sev=kms7.MSGuides.com
+
+if %i%==2 set KMS_Sev=kms8.MSGuides.com
+
+if %i%==3 set KMS_Sev=kms9.MSGuides.com
+
+if %i%==4 goto notsupported
+
 cscript //nologo c:\windows\system32\slmgr.vbs /skms %KMS_Sev% >nul
-cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.& echo ************************************ & goto start) || (echo Please Wait... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
-cls
+
+cscript //nologo c:\windows\system32\slmgr.vbs /ato | find /i "successfully" && (echo.& echo ====================================== & echo. & choice /n /c YN /m "Go back to start? [Y,N]?" & if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto server)
+
+goto start
+
+:notsupported
+
+echo ======================================&echo.&echo Sorry! Your version is not supported.
+timeout 3
 goto start
 ::Activate End
 
@@ -146,7 +142,7 @@ goto start
 
 :debloat
 cls
-title FreshPC v1.5 - Debloat
+title FreshPC v1.6 - Debloat
 sfc /scannow
 dism /online /cleanup-image /checkhealth\
 for /f "tokens=3*" %%i in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards" /f "ServiceName" /s^|findstr /i /l "ServiceName"') do (
@@ -190,7 +186,7 @@ goto start
 ::Install
 :install
 cls
-title FreshPC v1.5 - Install Programs
+title FreshPC v1.6 - Install Programs
 ECHO.
 ECHO ...............................................
 ECHO PRESS SOMETHING.
@@ -233,7 +229,7 @@ goto install
 
 :browser
 cls
-title FreshPC v1.5 - Install A Browser
+title FreshPC v1.6 - Install A Browser
 ECHO.
 ECHO ...............................................
 ECHO PRESS 1, 2, or 3.
@@ -293,7 +289,7 @@ goto install
 
 :games
 cls
-title FreshPC v1.5 - Install A Game Launcher
+title FreshPC v1.6 - Install A Game Launcher
 ECHO.
 ECHO ...............................................
 ECHO PRESS 1, 2, or 3.
