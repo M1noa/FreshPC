@@ -143,6 +143,7 @@ goto start
 :debloat
 cls
 title FreshPC v1.6 - Debloat
+netsh winsock reset
 sfc /scannow
 dism /online /cleanup-image /checkhealth\
 for /f "tokens=3*" %%i in ('reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkCards" /f "ServiceName" /s^|findstr /i /l "ServiceName"') do (
