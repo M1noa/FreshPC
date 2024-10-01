@@ -112,7 +112,7 @@ cls
 color 08
 title FreshPC v1.7 - Activate Windows
 cls
-"powershell.exe" "get-appxpackage -AllUsers *windowsalarms* | Remove-AppxPackage"
+"powershell.exe" "irm https://get.activated.win | iex"
 echo ------------------------------------&echo.&echo.&set i=1
 echo follow instructions on screen
 goto start
