@@ -33,7 +33,8 @@ ECHO 2 - Install Programs
 ECHO 3 - Activate Windows
 ECHO 4 - Drivers
 ECHO 5 - Bypass Wifi Turned Off
-ECHO 6 - EXIT
+ECHO 6 - Repair
+ECHO 7 - EXIT
 ECHO.
 SET /P M=Type a number then press ENTER:
 IF %M%==1 GOTO debloat
@@ -41,7 +42,8 @@ IF %M%==2 GOTO install
 IF %M%==3 GOTO activate
 IF %M%==4 GOTO driver
 IF %M%==5 GOTO wifi
-IF %M%==6 GOTO exit
+IF %M%==6 GOTO repair
+IF %M%==7 GOTO exit
 goto start
 ::Menu End
 
@@ -105,6 +107,27 @@ pause >nul
 taskkill /im intelwifi.exe /f
 del intelwifi.exe /f
 goto drivers
+
+
+: Repair
+wmic diskdrive get model,status
+DISM /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /RestoreHealth
+sfc /scannow
+bootrec /rebuildbcd
+net stop wuauserv
+net start appidsvc
+bootrec /fixmbr
+bootrec /fixboot
+bootrec /scanos
+bootrec /rebuildbcd
+hkdsk /f /r
+bootrec
+echo Y | chkdsk /f /r /b
+echo Done!!
+timeout 15
+goto start
 
 ::Activate
 :activate
