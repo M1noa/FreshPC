@@ -124,7 +124,7 @@ bootrec /scanos
 bootrec /rebuildbcd
 hkdsk /f /r
 bootrec
-echo Y | chkdsk /f /r /b
+echo Y | chkdsk C: /f /r /b
 echo Done!!
 timeout 15
 goto start
