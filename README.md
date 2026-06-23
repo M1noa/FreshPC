@@ -1,3 +1,5 @@
+> This is outdated and is very buggy. I recommend using [ChrisTitusTech/winutil](https://github.com/christitustech/winutil) for debloating, installing, configurtion, and useing [massgravel](https://github.com/massgravel/Microsoft-Activation-Scripts) for activation.
+
 # FreshPC
 
 [![ViewCount](https://img.shields.io/endpoint?url=https://hits.dwyl.com/Minoa/FreshPC.json%3Fcolor%3Dblue&label=Views)](http://hits.dwyl.com/Minoa/FreshPC)
